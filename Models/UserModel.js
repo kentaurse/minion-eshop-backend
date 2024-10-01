@@ -92,11 +92,11 @@ const init = async () => {
   const salt = await bcrypt.genSalt(10);
   const password = await bcrypt.hash("123456", salt);
   const userModel = model("User");
-  var user = await userModel.find({ email: "admin@gmail.com" }, "");
+  var user = await userModel.find({ email: "Admin@gmail.com" }, "");
   var admin = new userModel({
     firstName: "Admin",
     lastName: "User",
-    email: "admin@gmail.com",
+    email: "Admin@gmail.com",
     password: password,
     role: "admin",
     permission: true,
