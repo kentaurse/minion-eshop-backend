@@ -74,7 +74,7 @@ const UserSchema = new Schema({
   },
   permission: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   delete: {
     type: Boolean,
